@@ -34,6 +34,7 @@ import QueryLookupRenderer from 'relay-query-lookup-renderer';
 
 All props are the same as the [QueryRenderer](https://facebook.github.io/relay/docs/query-renderer.html) included in relay except for 
 * `lookup` If true, check the relay store for data first. If false or null, you will get the same behavior of the standard `QueryRenderer`.
+* `retain` If true, do not garbage collect data when the `QueryLookupRenderer` is unmounted.
 
 
 ## Server Side Rendering (Isomorphic)

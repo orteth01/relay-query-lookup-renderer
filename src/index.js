@@ -151,7 +151,7 @@ class ReactRelayQueryRenderer extends React.Component {
             this._rootSubscription.dispose();
             this._rootSubscription = null;
         }
-        if (this._selectionReference) {
+        if (!this.props.retain && this._selectionReference) {
             this._selectionReference.dispose();
             this._selectionReference = null;
         }
